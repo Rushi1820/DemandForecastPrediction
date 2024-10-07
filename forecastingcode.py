@@ -40,10 +40,10 @@ def build_lstm_model(input_shape):
 
 # Load and preprocess the data
 def load_data():
-    df1 = pd.read_csv("C:/Users/grvn1/Downloads/Usecase_DemadForecasting1/Usecase_DemadForecasting1/Transactional_data_retail_01.csv")
-    df2 = pd.read_csv("C:/Users/grvn1/Downloads/Usecase_DemadForecasting1/Usecase_DemadForecasting1/Transactional_data_retail_02.csv")
-    customer_df = pd.read_csv("C:/Users/grvn1/Downloads/Usecase_DemadForecasting1/Usecase_DemadForecasting1/CustomerDemographics.csv")
-    product_df = pd.read_csv("C:/Users/grvn1/Downloads/Usecase_DemadForecasting1/Usecase_DemadForecasting1/ProductInfo.csv")
+    df1 = pd.read_csv("Transactional_data_retail_01.csv")
+    df2 = pd.read_csv("Transactional_data_retail_02.csv")
+    customer_df = pd.read_csv("CustomerDemographics.csv")
+    product_df = pd.read_csv("ProductInfo.csv")
 
     # Combine transactional data
     df = pd.concat([df1, df2])
